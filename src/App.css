@@ -1,0 +1,281 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Centered Hero Section */
+.hero {
+  height: 90vh; /* Use a fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #f0f0f0; /* Light background */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 0.5rem; /* Adjust margin for better spacing */
+}
+
+.hero .tagline {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem; /* Adjust margin for better spacing */
+  color: red;
+}
+
+button {
+  padding: 0.8rem 2.5rem;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+/* What We Are Section */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+  gap: 2rem;
+  padding: 3rem;
+  background-color: #f9fafc;
+  text-align: center;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature .icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  color: darkgreen;
+  margin-bottom: 1rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #606060;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  padding: 0.8rem;
+  background-color: darkgreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #1b5e20;
+}
+
+/* Services Page (unchanged) */
+.services-page {
+  padding: 3rem 2rem;
+  background-color: #f0f4f8;
+}
+
+.services-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.service-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.05);
+}
+
+h2 {
+  margin-top: 1.5rem;
+  color: #1b5e20;
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #606060;
+}
+
+.service-card a {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: #00e676;
+  color: white;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.service-card a:hover {
+  background-color: #1b5e20;
+}
+
+/* About Page (unchanged) */
+.about-page {
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.about-header .highlighted {
+  color: #00e676;
+  font-weight: 900;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #606060;
+}
+
+.about-content h2 {
+  font-size: 1.9rem;
+  color: #1b5e20;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+}
+
+.achievements {
+  background-color: #f0f4f8;
+  padding: 3rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.achievements h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #00e676;
+}
+
+.achievements p {
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .tagline {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+    padding: 2rem;
+  }
+
+  .about-content {
+    padding: 0 1rem;
+  }
+}
